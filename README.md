@@ -31,3 +31,5 @@ EXPOSE 3000
 Question 5 
 - docker pull mysql
 - docker pull phpmyadmin
+- docker volume create Docker_exo1
+- docker volume create Docker_exo2
