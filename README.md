@@ -23,5 +23,9 @@ RUN npm install
 CMD ["node", "src/index.js"]
 EXPOSE 3000
 ''
-docker pull tomcat
-cp  Dockerfil tomcat
+- docker pull tomcat
+- cp  Dockerfil tomcat
+- dans les deux cas, ils sont composés de 14 couches distinctes avec Dockfil Il est facile de vérifier que la construction des images est maintenant beaucoup plus rapide et qu’elle réutilise les images déjà mises en cache.
+
+
+Question 5 
