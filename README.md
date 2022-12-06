@@ -29,3 +29,5 @@ EXPOSE 3000
 
 
 Question 5 
+- docker pull mysql
+- docker pull phpmyadmin
