@@ -14,3 +14,14 @@ question 3
 - cp Docker_tp1 httpd
 
 Question 4 
+- nano Dockerfil
+''
+FROM node:18-alpine
+WORKDIR /app
+COPY .  .
+RUN npm install
+CMD ["node", "src/index.js"]
+EXPOSE 3000
+''
+docker pull tomcat
+cp  Dockerfil tomcat
