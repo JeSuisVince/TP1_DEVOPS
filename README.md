@@ -33,3 +33,6 @@ Question 5
 - docker pull phpmyadmin
 - docker volume create Docker_exo1
 - docker volume create Docker_exo2
+- docker run -d -v Docker_exo1:/LOCAL_PATH mysql phpmyadmin
+- docker run -d -v --link Docker_exo1:/LOCAL_PATH phpadmin myadmin 
+
