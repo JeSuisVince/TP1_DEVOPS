@@ -1,7 +1,7 @@
 # TP1_DEVOPS
 tp1
 
-question 3
+Question 3
 
 - docker pull httpd
 - docker images
@@ -14,7 +14,7 @@ question 3
 - cp Docker_tp1 httpd
 
 Question 4 
-- nano Dockerfil
+- nano Dockerfile
 ''
 FROM node:18-alpine
 WORKDIR /app
@@ -24,8 +24,9 @@ CMD ["node", "src/index.js"]
 EXPOSE 3000
 ''
 - docker pull tomcat
-- cp  Dockerfil tomcat
+- cp  Dockerfile tomcat
 - dans les deux cas, ils sont composés de 14 couches distinctes avec Dockfil Il est facile de vérifier que la construction des images est maintenant beaucoup plus rapide et qu’elle réutilise les images déjà mises en cache.
+Avec DockerFile nous pouvons build plusieurs images cest beaucoup plus "organisationnel"
 
 
 Question 5 
@@ -36,3 +37,9 @@ Question 5
 - docker run -d -v Docker_exo1:/LOCAL_PATH mysql phpmyadmin
 - docker run -d -v --link Docker_exo1:/LOCAL_PATH phpadmin myadmin 
 
+Question 6 
+- docker rm Docker_exo1 (--force)
+- docker rm Docker_exo2 (--force)
+- docker run est entièrement basé sur la ligne de commande, tandis que docker-compose lit les données de configuration à partir d'un fichier YAML.
+- docker compose stop
+- docker-compose up
