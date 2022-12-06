@@ -11,3 +11,4 @@ nano docker tp/html/index.html
 docker volume create Docker_tp1
 docker run -d -v Docker_tp1:/LOCAL_PATH httpd
 docker rm Docker_tp1 (--force)
+cp Docker_tp1 httpd
